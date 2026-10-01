@@ -14,6 +14,16 @@ that does this for arbitrary sensors, and templating cannot read a sensor's
 value as of a past date, so a wrapper that patches `hass` is the clean way to
 do it.
 
+## Examples
+
+Wrapping a custom sleep card and stepping through past nights (fake data):
+
+![Sleep card example](docs/demo-sleep.gif)
+
+Wrapping standard Home Assistant cards, two tile cards and a gauge (generic data):
+
+![Standard cards example](docs/demo-standard-cards.gif)
+
 ## How it works
 
 1. The wrapper owns a selected date with previous / today / next controls.
